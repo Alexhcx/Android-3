@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloHumor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Como você está se sentido hoje?"
+            android:textSize="20dp"
+            android:translationY="80dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="497dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:orientation="vertical"
+                android:translationY="120dp">
+
+                <ImageView
+                    android:id="@+id/imagemFeliz"
+                    android:layout_width="95dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/feliz" />
+
+                <ImageView
+                    android:id="@+id/imagemPaz"
+                    android:layout_width="95dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/paz" />
+
+                <ImageView
+                    android:id="@+id/imagemFurioso"
+                    android:layout_width="95dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/furioso" />
+
+                <ImageView
+                    android:id="@+id/imagemTriste"
+                    android:layout_width="95dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/triste" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:orientation="vertical"
+                android:translationY="120dp">
+
+                <TextView
+                    android:id="@+id/feliz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feliz"
+                    android:textSize="20sp"
+                    android:translationY="25dp" />
+
+                <TextView
+                    android:id="@+id/paz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Em paz"
+                    android:textSize="20sp"
+                    android:translationY="70dp" />
+
+                <TextView
+                    android:id="@+id/furioso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Furioso"
+                    android:textSize="20sp"
+                    android:translationY="120dp" />
+
+                <TextView
+                    android:id="@+id/triste"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Triste"
+                    android:textSize="20sp"
+                    android:translationY="165dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/botaoVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Voltar" />
+
+    </LinearLayout>
+
+</RelativeLayout>
